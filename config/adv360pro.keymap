@@ -2,22 +2,24 @@
 #include "zmk-helpers/key-labels/adv360_custom.h"
 
 
-/* map the adv360's extra keys */
-#define X_LT  \
-                &kp EQUAL &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS \
+/* map 360's extra keys */
+#define X_LT    &kp EQUAL &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F11     &kp F12 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp MINUS \
                 &kp TAB
-#define X_RT    &kp BACKSLASH
+#define X_MT    &none &none
+#define X_RT    &kp BSLH
 
 #define X_LM    &kp ESC
-#define X_RM    &none
+#define X_MM    &none &none
+#define X_RM    &kp SQT
 
-#define X_LB    &none
-#define X_MB    &none &none &none       &none &none &none
-#define X_RB    &none
+#define X_LB    &kp LSHFT
+#define X_RB    &kp RSHFT
 
-#define X_LH    &none &none &none &kp LEFT &kp RIGHT
-#define X_MH    &none &none
-#define X_RH    &kp UP &kp DOWN &none &none &none
+#define X_LH    &none &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT     &kp UP &kp DOWN U_WH_D U_WH_U &none \
+                &kp LCTRL &kp LALT      &kp LGUI  &kp RCTRL
+#define X_MH    &kp HOME    &kp PG_UP
+#define X_RH    &kp END     &kp PG_DN
+
 
 /* activate bluetooth */
 #define CONFIG_WIRELESS
