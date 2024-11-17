@@ -1,6 +1,6 @@
 /* source key position labels */
-#include "zmk-helpers/key-labels/adv360_custom.h
-"
+#include "zmk-helpers/key-labels/adv360_custom.h"
+
 
 /* map the adv360's extra keys */
 #define X_LT  \
